@@ -38,6 +38,12 @@ const pictureArtSchema = mongoose.Schema({
         type: Number,
         default: 4
     },
+    userRatings: {
+        type: Array 
+     },
+     comments: {
+         type: Array
+     },
     discount: {
         type: Number
     }

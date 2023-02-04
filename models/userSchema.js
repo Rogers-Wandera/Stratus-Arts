@@ -48,6 +48,9 @@ const userSchema = mongoose.Schema({
     },
     refreshToken: {
         type: String
+    },
+    referral: {
+        type: String
     }
 })
 

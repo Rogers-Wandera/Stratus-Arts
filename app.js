@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const { logger } = require("./middlewares/logs");
 const cors = require("cors");
@@ -16,9 +17,12 @@ const productArtRouter = require("./routes/products/artProductsRoute");
 const productMagazineRouter = require("./routes/products/magazineProductsRoute");
 const verifyJWT = require("./middlewares/verifyJWT");
 const uploadProfileRouter = require("./routes/uploadProfile");
+const flutterWaveRouter = require("./routes/payments/flutterwaveRoute");
+const redirectRouter = require("./routes/payments/redirectSuccess");
+const ordersRouter = require("./routes/orders");
+const editorOrderRouter = require("./routes/editorsOrders");
+const registerAsRouter = require("./routes/registerAsEditor");
 const cloudinary =  require("cloudinary").v2;
-
-require("dotenv").config();
 const app = express();
 
 app.use(logger);
@@ -38,13 +42,19 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use(cookieParser());
 
+
 app.use("/api/v1/login", loginRouter);
 app.use("/api/v1/register", registerRouter);
+app.use("/api/v1/register/editor", registerAsRouter);
 app.use("/api/v1/refresh", refreshRouter)
 app.use("/api/v1/logout", logoutRouter)
 app.use("/api/v1/", verifyEmailRouter)
 app.use("/api/v1/products",productArtRouter)
 app.use("/api/v1/magazines",productMagazineRouter)
+app.use("/api/v1/payments/flutterwave",flutterWaveRouter)
+app.use("/api/v1/payments/success",redirectRouter)
+app.use("/api/v1/orders",ordersRouter)
+app.use("/api/v1/orderseditor/editors",editorOrderRouter)
 app.use("/api/v1/profile-picture",verifyJWT ,uploadProfileRouter)
 
 const PORT = process.env.PORT || 5000;

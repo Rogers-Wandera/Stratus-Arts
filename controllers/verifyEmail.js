@@ -15,7 +15,7 @@ const verifyEmailController = async (req,res) => {
             return res.status(400).json({ msg: "Invalid link or expired" })
         }
 
-        await UserModel.updateOne({ _id: userExits._id, verified: true });
+        await UserModel.updateOne({ _id: req.params.id },{ verified: true});
         await EmailToken.findByIdAndRemove(token._id);
 
         res.status(200).json({ msg: "Email has been verified" })

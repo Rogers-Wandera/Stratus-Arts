@@ -14,7 +14,8 @@ const magazineSchema = mongoose.Schema({
         required: [true, "Category must be provided"]
     },
     description: {
-        type: String
+        type: String,
+        required: [true, "Description must be provided"]
     },
     pdfFile: {
         type: Array,
@@ -37,6 +38,12 @@ const magazineSchema = mongoose.Schema({
     rating: {
         type: Number,
         default: 4
+    },
+    userRatings: {
+       type: Array 
+    },
+    comments: {
+        type: Array
     },
     discount: {
         type: Number
