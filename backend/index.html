@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="payment" type="button">
+        Pay
+    </button>
+
+    <script>
+        const url = "http://localhost:5000/api/v1/payments/flutterwave";
+        const items = [
+            cartItems = [
+            {
+                productName: "Magazine",
+                productPrice: 300000,
+                productImage: "https://res.cloudinary.com/dxnjzsnqb/image/upload/v1674571866/Magazines/1674571861685-853108977_ebzsoo.png",
+                productId: "63cff064724ceb8ac3545f8f",
+                quantity: 3,
+                createdBy: "63ce66245d46fc2120c1b68f"
+            },
+            {
+                productName: "63cfc55c778dcd25813ca51b",
+                productPrice: 400000,
+                productImage: "https://res.cloudinary.com/dxnjzsnqb/image/upload/v1674562448/pictureArts/1674562443078-45228323.jpg",
+                productId: "63cfc55c778dcd25813ca51b",
+                quantity: 3,
+                createdBy: "63d294f7c4c9a0ab9fa4ce0b"
+            },
+            ],
+            orderSummary = {
+                cartTotal : 700000,
+                quantityTotal : 6,
+            }
+        ]
+
+        const paymentObj = { number: "0867353422", currency: "UGX" , network: "AIRTEL" };
+
+        const PaymentBtn = document.getElementById("payment");
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJkaXNwbGF5TmFtZSI6IldhbmRlcmEiLCJlbWFpbCI6InJvZ2VycmlzaGFAZ21haWwuY29tIiwicm9sZXMiOlsyMDAxLDUxNTAsMTk4NF19LCJpYXQiOjE2NzU0ODM4MjUsImV4cCI6MTY3NTY1NjYyNX0.d1hyo-ZihDKadLuQ__5i4pCJy87e9HwQ5d6iSxhiaqI"
+
+        PaymentBtn.addEventListener("click", async () => {
+            try {
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: { 
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}` 
+                    },
+                    body: JSON.stringify({ ...paymentObj, items })
+                }).then(res => res.json()).catch((err) => console.log(err))
+            } catch (error) {
+                console.log(error)
+            }
+        })
+    </script>
+</body>
+</html>
