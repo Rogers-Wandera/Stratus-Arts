@@ -63,7 +63,7 @@ function HighDiscounts() {
         <Slider {...settings}>
           {popularProducts.map((cat) => {
             return (
-              <MDBCol md="12" lg="4" className="mb-4">
+              <MDBCol md="12" lg="4" className="mb-4" key={cat.id}>
                 <MDBCard style={{ marginRight: "20px" }}>
                   <MDBCardImage src={cat.img} fluid className="w-100" />
                   <a href="#!">

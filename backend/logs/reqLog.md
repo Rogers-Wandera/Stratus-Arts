@@ -666,3 +666,6 @@
 230204	10:44:13	60fb8366-5618-448c-a228-10eb83a82a9b	GET	undefined	/api/v1/magazines/comments/63cff064724ceb8ac3545f8f
 230204	10:44:57	c8f35f2c-fd2d-4fa4-a0f1-48019bc3b0a2	GET	undefined	/api/v1/magazines/ratings/63cff064724ceb8ac3545f8f
 230204	10:46:36	80368c0a-d9d2-4ca0-a703-db165797ba16	GET	undefined	/api/v1/products/ratings/63cff064724ceb8ac3545f8f
+230305	19:20:54	b8d7cc41-6903-4be5-a022-929059b4e000	GET	undefined	/api/v1/products
+230305	19:20:55	6f6c551d-3229-4dda-9c1f-a04bf772926d	GET	undefined	/favicon.ico
+230305	19:21:28	62510a16-26ad-4602-aac8-eb0635b763ea	GET	undefined	/api/v1/products

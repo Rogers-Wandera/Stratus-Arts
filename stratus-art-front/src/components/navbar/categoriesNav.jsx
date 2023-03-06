@@ -32,41 +32,29 @@ const navigation = {
       ],
       sections: [
         {
-          id: "clothing",
-          name: "Clothing",
+          id: "publications",
+          name: "Publications",
           items: [
             { name: "Tops", href: "#" },
             { name: "Dresses", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Denim", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
           ],
         },
         {
-          id: "accessories",
-          name: "Accessories",
+          id: "artpieces",
+          name: "Art Pieces",
           items: [
             { name: "Watches", href: "#" },
             { name: "Wallets", href: "#" },
             { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
           ],
         },
         {
-          id: "brands",
-          name: "Brands",
+          id: "prints",
+          name: "Prints",
           items: [
             { name: "Full Nelson", href: "#" },
             { name: "My Way", href: "#" },
             { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Significant Other", href: "#" },
           ],
         },
       ],
@@ -94,38 +82,35 @@ const navigation = {
       ],
       sections: [
         {
-          id: "clothing",
-          name: "Clothing",
+          id: "letus",
+          name: "Let us Help You",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "Help Center", href: "#" },
+            { name: "Contact Us", href: "#" },
+            { name: "How to buy on Stratus arts", href: "#" },
+            { name: "Payment Methods", href: "#" },
+            { name: "Delivery", href: "#" },
+            { name: "Report a product", href: "#" },
+            { name: "Return Policy", href: "#" },
           ],
         },
         {
-          id: "accessories",
-          name: "Accessories",
+          id: "about",
+          name: "About Stratus Arts",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
+            { name: "Privacy policy Notice", href: "#" },
+            { name: "Terms abd Conditions", href: "#" },
+            { name: "Return and Refund Policy", href: "#" },
+            { name: "Flash sales", href: "#" },
           ],
         },
         {
-          id: "brands",
-          name: "Brands",
+          id: "makemoney",
+          name: "Make Money with us",
           items: [
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
+            { name: "Sell on Stratus Arts", href: "#" },
+            { name: "Become a Stratus Arts Delivery Agents", href: "#" },
+            { name: "Stratus Arts B2B", href: "#" },
           ],
         },
       ],
@@ -133,7 +118,7 @@ const navigation = {
   ],
   pages: [
     { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Quick Serach", href: "#" },
   ],
 };
 
@@ -145,7 +130,13 @@ export default function CategoriesNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white" style={{ position: "relative", zIndex: "4" }}>
+    <div
+      className="bg-white"
+      style={{
+        position: "relative",
+        zIndex: "4",
+      }}
+    >
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -286,7 +277,7 @@ export default function CategoriesNav() {
                 <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="/"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Sign in
@@ -294,7 +285,7 @@ export default function CategoriesNav() {
                   </div>
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="/"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Create account
@@ -445,6 +436,7 @@ export default function CategoriesNav() {
                                               >
                                                 <a
                                                   href={item.href}
+                                                  style={{ color: "black" }}
                                                   className="hover:text-gray-800"
                                                 >
                                                   {item.name}

@@ -64,7 +64,7 @@ function TopRatings() {
       <Slider {...settings}>
         {Array.from(Array(4)).map((_, i) => {
           return (
-            <MDBRow className="justify-content-center mb-0">
+            <MDBRow className="justify-content-center mb-0" key={i}>
               <MDBCol md="12" xl="12">
                 <MDBCard className="shadow-0 border rounded-3 mt-5 mb-3">
                   <MDBCardBody>

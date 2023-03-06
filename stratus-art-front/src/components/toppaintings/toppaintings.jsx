@@ -59,7 +59,12 @@ function TopPaintings() {
               return (
                 <MDBCol md="12" lg="4" className="mb-4" key={i}>
                   <div style={{ marginRight: "20px" }}>
-                    <img src={image1} fluid alt="prod" className="w-100" />
+                    <img
+                      src={image1}
+                      fluid="true"
+                      alt="prod"
+                      className="w-100"
+                    />
                     <a href="#!">
                       <div
                         className="mask"

@@ -93,11 +93,11 @@ function BestSellers() {
                       <h5 className="text-dark mb-0">$999</h5>
                     </div>
 
-                    <div class="d-flex justify-content-between mb-2">
-                      <p class="text-muted mb-0">
-                        Available: <span class="fw-bold">6</span>
+                    <div className="d-flex justify-content-between mb-2">
+                      <p className="text-muted mb-0">
+                        Available: <span className="fw-bold">6</span>
                       </p>
-                      <div class="ms-auto text-warning">
+                      <div className="ms-auto text-warning">
                         <StarRate />
                         <StarRate />
                         <StarRate />
