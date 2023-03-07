@@ -4,6 +4,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import RecentComments from "./comments";
+import ProductReviews from "./reviews";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -38,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+export default function ProductDetailsInfo() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -53,20 +55,20 @@ export default function BasicTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Comments" {...a11yProps(0)} />
+          <Tab label="Reviews" {...a11yProps(1)} />
+          {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        <RecentComments />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <ProductReviews />
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      {/* <TabPanel value={value} index={2}>
         Item Three
-      </TabPanel>
+      </TabPanel> */}
     </Box>
   );
 }

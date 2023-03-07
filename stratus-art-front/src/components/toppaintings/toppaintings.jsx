@@ -68,7 +68,7 @@ function TopPaintings() {
                     <a href="#!">
                       <div
                         className="mask"
-                        style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+                        // style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
                       >
                         <div className="d-flex justify-content-start align-items-start h-100">
                           <h5>

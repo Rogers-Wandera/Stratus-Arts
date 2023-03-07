@@ -12,10 +12,10 @@ import {
 
 function RecentComments() {
   return (
-    <section style={{ backgroundColor: "#ad655f" }}>
+    <section style={{ backgroundColor: "#eee" }}>
       <MDBContainer className="py-5" style={{ maxWidth: "1000px" }}>
         <MDBRow className="justify-content-center">
-          <MDBCol md="12" lg="10">
+          <MDBCol md="12" lg="12">
             <MDBCard className="text-dark">
               <MDBCardBody className="p-4">
                 <MDBTypography tag="h4" className="mb-0">
@@ -30,18 +30,14 @@ function RecentComments() {
                     className="rounded-circle shadow-1-strong me-3"
                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(23).webp"
                     alt="avatar"
-                    width="60"
-                    height="60"
+                    style={{ width: "100px", height: "100px" }}
                   />
                   <div>
                     <MDBTypography tag="h6" className="fw-bold mb-1">
                       Maggie Marsh
                     </MDBTypography>
                     <div className="d-flex align-items-center mb-3">
-                      <p className="mb-0">
-                        March 07, 2021
-                        <span className="badge bg-primary">Pending</span>
-                      </p>
+                      <p className="mb-0">March 07, 2021</p>
                       <a href="#!" className="link-muted">
                         <MDBIcon fas icon="pencil-alt ms-2" />
                       </a>
@@ -70,18 +66,14 @@ function RecentComments() {
                     className="rounded-circle shadow-1-strong me-3"
                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(26).webp"
                     alt="avatar"
-                    width="60"
-                    height="60"
+                    style={{ width: "100px", height: "100px" }}
                   />
                   <div>
                     <MDBTypography tag="h6" className="fw-bold mb-1">
                       Lara Stewart
                     </MDBTypography>
                     <div className="d-flex align-items-center mb-3">
-                      <p className="mb-0">
-                        March 15, 2021
-                        <span className="badge bg-success">Approved</span>
-                      </p>
+                      <p className="mb-0">March 15, 2021</p>
                       <a href="#!" className="link-muted">
                         <MDBIcon fas icon="pencil-alt ms-2" />
                       </a>
@@ -113,18 +105,14 @@ function RecentComments() {
                     className="rounded-circle shadow-1-strong me-3"
                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(33).webp"
                     alt="avatar"
-                    width="60"
-                    height="60"
+                    style={{ width: "100px", height: "100px" }}
                   />
                   <div>
                     <MDBTypography tag="h6" className="fw-bold mb-1">
                       Alexa Bennett
                     </MDBTypography>
                     <div className="d-flex align-items-center mb-3">
-                      <p className="mb-0">
-                        March 24, 2021
-                        <span className="badge bg-danger">Rejected</span>
-                      </p>
+                      <p className="mb-0">March 24, 2021</p>
                       <a href="#!" className="link-muted">
                         <MDBIcon fas icon="pencil-alt ms-2" />
                       </a>
@@ -154,18 +142,14 @@ function RecentComments() {
                     className="rounded-circle shadow-1-strong me-3"
                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(24).webp"
                     alt="avatar"
-                    width="60"
-                    height="60"
+                    style={{ width: "100px", height: "100px" }}
                   />
                   <div>
                     <MDBTypography tag="h6" className="fw-bold mb-1">
                       Alexa Bennett
                     </MDBTypography>
                     <div className="d-flex align-items-center mb-3">
-                      <p className="mb-0">
-                        March 30, 2021
-                        <span className="badge bg-primary">Pending</span>
-                      </p>
+                      <p className="mb-0">March 30, 2021</p>
                       <a href="#!" className="link-muted">
                         <MDBIcon fas icon="pencil-alt ms-2" />
                       </a>

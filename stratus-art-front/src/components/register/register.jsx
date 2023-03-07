@@ -32,9 +32,13 @@ export default function Register() {
         <Box
           sx={{
             marginTop: 8,
+            marginBottom: 20,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            backgroundColor: "white",
+            padding: "15px",
+            borderRadius: "10px",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>

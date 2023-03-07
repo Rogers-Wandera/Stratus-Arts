@@ -239,7 +239,6 @@ export default function CategoriesNav() {
                               {section.name}
                             </p>
                             <ul
-                              role="list"
                               aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
                               className="mt-6 flex flex-col space-y-6"
                             >
@@ -294,7 +293,7 @@ export default function CategoriesNav() {
                 </div>
 
                 <div className="border-t border-gray-200 py-6 px-4">
-                  <a href="#" className="-m-2 flex items-center p-2">
+                  <a href="/" className="-m-2 flex items-center p-2">
                     <img
                       src="https://tailwindui.com/img/flags/flag-canada.svg"
                       alt=""
@@ -334,7 +333,7 @@ export default function CategoriesNav() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">Your Company</span>
                   <img
                     className="h-8 w-auto"
@@ -425,7 +424,6 @@ export default function CategoriesNav() {
                                             {section.name}
                                           </p>
                                           <ul
-                                            role="list"
                                             aria-labelledby={`${section.name}-heading`}
                                             className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                           >
@@ -472,14 +470,14 @@ export default function CategoriesNav() {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <a
-                    href="#"
+                    href="/"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Sign in
                   </a>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   <a
-                    href="#"
+                    href="/"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Create account
@@ -488,7 +486,7 @@ export default function CategoriesNav() {
 
                 <div className="hidden lg:ml-8 lg:flex">
                   <a
-                    href="#"
+                    href="/"
                     className="flex items-center text-gray-700 hover:text-gray-800"
                   >
                     <img
@@ -503,7 +501,7 @@ export default function CategoriesNav() {
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                  <a href="/" className="p-2 text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Search</span>
                     <MagnifyingGlassIcon
                       className="h-6 w-6"
@@ -514,7 +512,7 @@ export default function CategoriesNav() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                  <a href="/" className="group -m-2 flex items-center p-2">
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
