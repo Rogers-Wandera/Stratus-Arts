@@ -4,19 +4,19 @@ import { Grid } from "@mui/material";
 export default function Newsletter() {
   return (
     <Grid sx={{ width: "98%", margin: "1rem auto" }}>
-      <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 lg:max-w-none lg:grid-cols-2">
+      <div className="tw-relative tw-isolate tw-overflow-hidden tw-bg-gray-900 tw-py-16 sm:tw-py-24 lg:tw-py-32">
+        <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
+          <div className="tw-mx-auto tw-grid tw-max-w-2xl tw-grid-cols-1 tw-gap-y-16 tw-gap-x-8 lg:tw-max-w-none lg:tw-grid-cols-2">
             <div className="max-w-xl lg:max-w-lg">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h2 className="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-white sm:tw-text-4xl">
                 Subscribe to our newsletter.
               </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-300">
+              <p className="tw-mt-4 tw-text-lg tw-leading-8 tw-text-gray-300">
                 Nostrud amet eu ullamco nisi aute in ad minim nostrud
                 adipisicing velit quis. Duis tempor incididunt dolore.
               </p>
-              <div className="mt-6 flex max-w-md gap-x-4">
-                <label htmlFor="email-address" className="sr-only">
+              <div className="tw-mt-6 flex tw-max-w-md tw-gap-x-4">
+                <label htmlFor="email-address" className="tw-sr-only">
                   Email address
                 </label>
                 <input
@@ -25,42 +25,44 @@ export default function Newsletter() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  className="tw-min-w-0 tw-flex-auto tw-rounded-md tw-border-0 tw-bg-white/5 tw-px-3.5 tw-py-2 tw-text-white tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-white/10 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-500 sm:tw-text-sm sm:tw-leading-6"
                   placeholder="Enter your email"
                 />
                 <button
                   type="submit"
-                  className="flex-none rounded-md bg-indigo-500 py-2.5 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  className="tw-flex-none tw-rounded-md tw-bg-indigo-500 tw-py-2.5 tw-px-3.5 tw-text-sm tw-font-semibold tw-text-white tw-shadow-sm hover:tw-bg-indigo-400 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-indigo-500"
                 >
                   Subscribe
                 </button>
               </div>
             </div>
-            <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+            <dl className="tw-grid tw-grid-cols-1 tw-gap-x-8 tw-gap-y-10 sm:tw-grid-cols-2 lg:tw-pt-2">
               <div className="flex flex-col items-start">
-                <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <div className="tw-rounded-md tw-bg-white/5 p-2 tw-ring-1 tw-ring-white/10">
                   <CalendarDaysIcon
-                    className="h-6 w-6 text-white"
+                    className="tw-h-6 tw-w-6 tw-text-white"
                     aria-hidden="true"
                   />
                 </div>
-                <dt className="mt-4 font-semibold text-white">
+                <dt className="tw-mt-4 tw-font-semibold tw-text-white">
                   Weekly articles
                 </dt>
-                <dd className="mt-2 leading-7 text-gray-400">
+                <dd className="tw-mt-2 tw-leading-7 tw-text-gray-400">
                   Non laboris consequat cupidatat laborum magna. Eiusmod non
                   irure cupidatat duis commodo amet.
                 </dd>
               </div>
-              <div className="flex flex-col items-start">
-                <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <div className="tw-flex tw-flex-col tw-items-start">
+                <div className="tw-rounded-md tw-bg-white/5 tw-p-2 tw-ring-1 tw-ring-white/10">
                   <HandRaisedIcon
-                    className="h-6 w-6 text-white"
+                    className="tw-h-6 tw-w-6 tw-text-white"
                     aria-hidden="true"
                   />
                 </div>
-                <dt className="mt-4 font-semibold text-white">No spam</dt>
-                <dd className="mt-2 leading-7 text-gray-400">
+                <dt className="tw-mt-4 tw-font-semibold tw-text-white">
+                  No spam
+                </dt>
+                <dd className="tw-mt-2 tw-leading-7 tw-text-gray-400">
                   Officia excepteur ullamco ut sint duis proident non
                   adipisicing. Voluptate incididunt anim.
                 </dd>
@@ -69,7 +71,7 @@ export default function Newsletter() {
           </div>
         </div>
         <svg
-          className="absolute top-0 left-1/2 -z-10 h-[42.375rem] -translate-x-1/2 blur-3xl xl:-top-6"
+          className="tw-absolute tw-top-0 tw-left-1/2 tw--z-10 tw-h-[42.375rem] tw--translate-x-1/2 tw-blur-3xl xl:tw--top-6"
           viewBox="0 0 1155 678"
           fill="none"
         >

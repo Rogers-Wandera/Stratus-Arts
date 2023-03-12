@@ -31,31 +31,33 @@ const callouts = [
 
 const Category = () => {
   return (
-    <div className="bg-gray-100" style={{ width: "98%", margin: "0 auto" }}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 className="text-2xl font-bold text-gray-900">Top Categories</h2>
+    <div className="tw-bg-gray-100" style={{ width: "98%", margin: "0 auto" }}>
+      <div className="tw-mx-auto tw-max-w-7xl tw-px-4 sm:tw-px-6 lg:tw-px-8">
+        <div className="tw-mx-auto tw-max-w-2xl py-16 sm:tw-py-24 lg:tw-max-w-none lg:tw-py-32">
+          <h2 className="tw-text-2xl tw-font-bold tw-text-gray-900">
+            Top Categories
+          </h2>
 
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div className="tw-mt-6 tw-space-y-12 lg:tw-grid lg:tw-grid-cols-3 lg:tw-gap-x-6 lg:tw-space-y-0">
             {callouts.map((callout) => (
-              <div key={callout.name} className="group relative">
-                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <div key={callout.name} className="tw-group tw-relative">
+                <div className="tw-relative tw-h-80 tw-w-full tw-overflow-hidden tw-rounded-lg tw-bg-white group-hover:tw-opacity-75 sm:tw-aspect-w-2 sm:tw-aspect-h-1 sm:tw-h-64 lg:tw-aspect-w-1 lg:tw-aspect-h-1">
                   <img
                     src={callout.imageSrc}
                     alt={callout.imageAlt}
-                    className="h-full w-full object-cover object-center"
+                    className="tw-h-full tw-w-full tw-object-cover tw-object-center"
                   />
                 </div>
-                <h3 className="mt-6 text-sm text-gray-500">
+                <h3 className="tw-mt-6 tw-text-sm tw-text-gray-500">
                   <a
                     href={callout.href}
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    <span className="absolute inset-0" />
+                    <span className="tw-absolute tw-inset-0" />
                     {callout.name}
                   </a>
                 </h3>
-                <p className="text-base font-semibold text-gray-900">
+                <p className="tw-text-base tw-font-semibold tw-text-gray-900">
                   {callout.description}
                 </p>
               </div>
