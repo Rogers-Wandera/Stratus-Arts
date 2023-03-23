@@ -40,6 +40,7 @@ const Dashboard = () => {
         <div className="tw-fixed md:tw-static tw-bg-main-bg dark:tw-bg-main-dark-bg tw-navbar tw-w-full">
           <NavBar />
         </div>
+        <ThemeSettings />
         <Outlet />
       </div>
     </div>

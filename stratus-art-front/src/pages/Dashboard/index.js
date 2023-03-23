@@ -3,7 +3,7 @@ export { default as DashboardHome } from "./pages/Ecommerce";
 export { default as Orders } from "./pages/Orders";
 export { default as Employees } from "./pages/Employees";
 export { default as Editor } from "./pages/Editor";
-export { default as Customers } from "./pages/Kanban";
+export { default as Customers } from "./pages/Customers";
 export { default as ColorPicker } from "./pages/ColorPicker";
 export { default as Calendar } from "./pages/Calendar";
 export { default as Area } from "./charts/Area";

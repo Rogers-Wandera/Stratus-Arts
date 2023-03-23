@@ -54,7 +54,7 @@ function App() {
             <Route path="customers" element={<Customers />} />
             {/* dashboard apps*/}
             <Route path="kanban" element={<Kanban />} />
-            <Route path="editors" element={<Editor />} />
+            <Route path="editor" element={<Editor />} />
             <Route path="calendar" element={<Calendar />} />
             <Route path="color-picker" element={<ColorPicker />} />
             {/* dashboard chats */}

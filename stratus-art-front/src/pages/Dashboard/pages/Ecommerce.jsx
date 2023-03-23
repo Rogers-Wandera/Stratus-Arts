@@ -25,7 +25,7 @@ const DashboardHome = () => {
               <p className="tw-text-2xl">$63,448.78</p>
             </div>
           </div>
-          <div className="tw-mt-6">
+          <div className="tw-mt-1">
             <Button
               color="white"
               bgColor="blue"
@@ -69,7 +69,7 @@ const DashboardHome = () => {
         </div>
       </div>
       <div className="tw-flex tw-gap-10 tw-flex-wrap tw-justify-center">
-        <div className="tw-bg-white dark:tw-text-gray-200 dark:tw-bg-secondary-dark-bg tw-m-3 tw-p4 tw-rounded-2xl md:tw-w-780">
+        <div className="tw-bg-white dark:tw-text-gray-200 dark:tw-bg-secondary-dark-bg tw-m-3 tw-p-4 tw-rounded-2xl md:tw-w-780">
           <div className="tw-flex tw-justify-between">
             <p className="tw-font-semibold tw-text-xl">Revenue Updates</p>
             <div className="tw-flex tw-items-center tw-gap-4">
@@ -107,7 +107,7 @@ const DashboardHome = () => {
               <div className="tw-mt-5">
                 <SparkLine
                   currentColor="blue"
-                  id="line-sparkline"
+                  id="linesparkline"
                   type="Line"
                   height="80px"
                   width="250px"
@@ -115,6 +115,17 @@ const DashboardHome = () => {
                   color="blue"
                 />
               </div>
+              <div className="tw-mt-10">
+                <Button
+                  color="white"
+                  bgColor="blue"
+                  text="Download Report"
+                  borderRadius="10px"
+                />
+              </div>
+            </div>
+            <div>
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>
